@@ -1,0 +1,40 @@
+main {
+  margin: auto;
+  max-width: 250px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.profilePhoto {
+  border-radius: 1000px;
+  margin-top: 100px;
+}
+
+@media only screen and (min-device-width: 700px) {
+  main {
+    max-width: 300px;
+    margin-bottom: 120px;
+  }
+
+  .profilePhoto {
+    margin-top: 150px;
+    margin-bottom: 70px;
+  }
+}
+
+@media only screen and (min-device-width: 1000px) {
+  main {
+    max-width: 400px;
+    margin-bottom: 150px;
+  }
+
+  .profilePhoto {
+    max-width: 350px;
+  }
+}
+
+@media only screen and (min-device-width: 1200px) {
+  main {
+    margin-bottom: 70px;
+  }
+}

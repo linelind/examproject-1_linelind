@@ -1,0 +1,318 @@
+h1 {
+  font-size: 21px;
+}
+
+.homecover_text h2 {
+  font-family: 'Open Sans Light', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.homecover_text {
+  line-height: 1px;
+  flex: 5;
+}
+
+.homecover_backgroundphoto {
+  background-image: url(../images/landscapeheader.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  background-size: 130%;
+  background-position-y: center;
+  margin: -8px;
+  position: absolute;
+  top: 0;
+  z-index: 50;
+}
+
+.homecover {
+  display: flex;
+  align-items: center;
+  background-color: var(--white-setopacity);
+  gap: 10px;
+  max-width: 80%;
+  position: relative;
+  top: 40px;
+  left: 20px;
+  padding: 10px;
+}
+
+.homecover_logo {
+  flex: 1;
+}
+
+.latestPostsSlider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: min-content;
+  margin: auto;
+}
+
+.fa-arrow-left,
+.fa-arrow-right {
+  z-index: 1;
+  color: var(--white);
+  background-color: var(--black-setopacity);
+  padding: 20px 10px;
+  font-size: 20px;
+  border-radius: 2px;
+}
+
+.fa-arrow-left {
+  margin-right: -8px;
+}
+
+.fa-arrow-right {
+  margin-left: -8px;
+}
+
+.hideSection {
+  display: none;
+}
+
+.latestPostsContainer {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  width: 280px;
+  margin: auto;
+}
+
+.recipeCard {
+  min-width: 150px;
+  min-height: 230px;
+  margin: 15px;
+  text-align: center;
+}
+
+.recipeCard_image {
+  height: 160px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.container_homepage {
+  position: relative;
+  top: 280px;
+  margin-bottom: 350px;
+}
+
+.categories_links {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 20px;
+  justify-content: center;
+  max-width: 450px;
+  margin: auto;
+}
+
+.categories_links img {
+  max-width: 100px;
+  border-radius: 100%;
+}
+
+.categories_links img:hover {
+  transform: scale(1.06);
+  transition: all ease 0.4s;
+}
+
+.aboutme_container {
+  margin: auto;
+  padding: 0 60px;
+  text-align: center;
+  max-width: 270px;
+}
+
+.aboutme_container p {
+  margin-bottom: 50px;
+}
+
+.aboutme_image img {
+  border-radius: 100%;
+  max-height: 270px;
+}
+
+.aboutme_image img:hover {
+  transform: scale(1.04);
+  transition: all ease 0.5s;
+}
+
+.cta-readMore {
+  width: 100px;
+  padding: 5px 12px;
+  font-size: 14px;
+  margin: auto;
+}
+
+.cta-readMore:hover {
+  transform: scale(1.1);
+  transition: all ease 0.3s;
+}
+
+footer {
+  z-index: 10;
+}
+
+@media only screen and (min-device-width: 450px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .homecover_text h2 {
+    font-size: 14px;
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (min-device-width: 600px) {
+  .categories_links img {
+    min-width: 130px;
+  }
+
+  h1,
+  .homecover_text h2 {
+    text-align: right;
+    padding-right: 10px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  .homecover_text h2 {
+    font-size: 16px;
+  }
+
+  .homecover {
+    max-width: 450px;
+  }
+
+  .latestPostsContainer {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 460px;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-device-width: 700px) {
+  .homecover_backgroundphoto {
+    position: relative;
+    top: 70px;
+    margin-bottom: -180px;
+    width: 100%;
+    height: 320px;
+  }
+
+  .large_backgroundcontainer {
+    background-color: var(--white);
+    position: relative;
+    padding-bottom: 100px;
+    margin-bottom: -70px;
+    width: 100%;
+  }
+
+  .large_backgroundcontainer h2 {
+    padding-top: 50px;
+  }
+
+  .aboutme_container h3,
+  .aboutme_container p {
+    margin-top: 40px;
+  }
+
+  footer {
+    margin-top: -70px;
+  }
+}
+
+@media only screen and (min-device-width: 850px) {
+  .homecover_backgroundphoto {
+    height: 400px;
+    background-position-y: -300px;
+  }
+
+  .homecover {
+    top: 80px;
+    left: 40px;
+  }
+}
+
+@media only screen and (min-device-width: 900px) {
+  .latestPostsContainer {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 620px;
+    margin: auto;
+  }
+
+  .categories_links img {
+    border-radius: 0;
+    min-width: 200px;
+    max-height: 150px;
+    object-fit: cover;
+  }
+
+  .categories_links {
+    max-width: 700px;
+    gap: 40px;
+  }
+}
+
+@media only screen and (min-device-width: 1000px) {
+  .homecover_backgroundphoto {
+    height: 500px;
+    background-position-y: -350px;
+  }
+
+  .homecover {
+    top: 100px;
+    left: 60px;
+  }
+
+  .aboutme_container {
+    margin: auto;
+    padding: 0 60px;
+    max-width: 700px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .aboutme_container div {
+    flex: 1;
+  }
+
+  .aboutme_container-text {
+    text-align: left;
+  }
+
+  .cta-readMore {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-device-width: 1200px) {
+  .homecover_backgroundphoto {
+    height: 600px;
+    background-position-y: center;
+    margin: 0;
+    margin-bottom: -180px;
+    top: 40px;
+  }
+
+  .large_backgroundcontainer {
+    margin-bottom: -150px;
+  }
+
+  .aboutme_container {
+    gap: 100px;
+    max-width: 750px;
+  }
+}

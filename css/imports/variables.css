@@ -1,0 +1,19 @@
+:root {
+  --darkpink-colour: #a6374b;
+  --orange-colour: #f2a007;
+  --orange-setopacit: #f2a0072f;
+  --green-colour: #94bf69;
+  --green-setopacity: #94bf69c0;
+  --lightgrey-background: #f2f2f2;
+  --black: #26211c;
+  --black-setopacity: rgba(38, 33, 28, 0.5);
+  --white: #fff;
+  --white-setopacity: rgba(255, 255, 255, 0.822);
+  --shadow-color: #767676;
+  --shadow-inputfields: rgba(128, 128, 128, 0.103);
+  --shadow-button: rgb(182, 182, 182);
+  --success-green: #0d6106;
+  --success-lightgreen: #eafbe8;
+  --error-red: #b90d17;
+  --error-lightred: #fee7e8;
+}
