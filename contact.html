@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Have a question for the author of the blog Dining with endometriosis? Please fill out this contact form and send your question to her." />
+    <title>Contact | Dining With Endometriosis</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/contact.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <!-- Hotjar Tracking Code for https://diningwithendometriosis.netlify.app/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2722886, hjsv: 6 };
+        a = o.getElementsByTagName('head')[0];
+        r = o.createElement('script');
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+  </head>
+  <body>
+    <div class="backgroundContainer">
+      <header>
+        <div class="navigation_smallscreen">
+          <ul>
+            <li>
+              <a href="index.html"><i class="fas fa-home"></i></a>
+            </li>
+            <li>
+              <a href="about.html"><i class="fas fa-smile-beam"></i></a>
+            </li>
+            <li>
+              <label class="search-label" for="search-menu"><i class="fas fa-search searchIcon_green"></i></label>
+              <input type="checkbox" id="search-menu" />
+              <div class="search_popup">
+                <input type="text" placeholder="Search for recipes" />
+                <a href="recipes.html"><i class="fas fa-search"></i></a>
+              </div>
+            </li>
+            <li>
+              <a href="recipes.html"><i class="fas fa-book-open"></i></a>
+            </li>
+            <li>
+              <a href="contact.html" class="smallnav_current"><i class="fas fa-envelope"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="scrollinformation_smallscreen">
+          <p>Dining With Endometriosis - Contact</p>
+        </div>
+        <a href="index.html" class="headerContainer_smallscreen">
+          <div class="logoContainer_smallscreen">
+            <img src="images/logo.png" alt="Logo." />
+          </div>
+          <div class="textContainer_smallscreen">
+            <p>Dining With Endometriosis</p>
+            <p>A gluten and lactose free blog</p>
+          </div>
+        </a>
+        <div class="navigation_largescreen">
+          <a href="index.html"><img src="images/logo.png" alt="Image link of logo that bring you to the home page." class="logo" /></a>
+          <nav>
+            <ul>
+              <li><a href="index.html" class="largenav_item">Home</a></li>
+              <li><a href="about.html" class="largenav_item">About</a></li>
+              <li><a href="recipes.html" class="largenav_item">Recipes</a></li>
+              <li><a href="contact.html" class="largenav_current largenav_item">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="largenav_search">
+            <input type="text" placeholder="Search for recipes" id="searchInput" />
+            <a href="recipes.html"><i class="fas fa-search"></i></a>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="contactImage_smallscreen"></div>
+        <h1>Contact</h1>
+        <div class="container_largescreen">
+          <form action="form-success.php" method="POST">
+            <div class="formContainer">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="Name" />
+              <div class="formError" id="nameError">Must be more than 5 characters.</div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="Email" />
+              <div class="formError" id="emailError">Please enter your email address.</div>
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="Subject" />
+              <div class="formError" id="subjectError">Must be more than 15 characters.</div>
+              <label for="message">Message</label>
+              <textarea id="message" name="message"></textarea>
+              <div class="formError" id="messageError">Must be more than 25 characters.</div>
+              <div class="sendContainer">
+                <input type="submit" value="Send" class="cta send_button" />
+                <i class="fas fa-paper-plane"></i>
+              </div>
+            </div>
+          </form>
+          <div class="contactImage_largescreen">
+            <img src="images/contactprofilephoto.jpg" alt="Emma is sitting on a mountain top, looking out accross nature and smiling." />
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>All rights reserved Emma Walterson</p>
+        <div>
+          <a href="https://twitter.com/" target="_blank" class="socialMediaLinks"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" class="socialMediaLinks"><i class="fab fa-instagram"></i></a>
+        </div>
+      </footer>
+    </div>
+    <script src="js/contact.js"></script>
+  </body>
+</html>
