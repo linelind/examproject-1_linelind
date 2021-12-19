@@ -224,6 +224,7 @@ a {
 
 .logoContainer_smallscreen img {
   max-height: 45px;
+  display: none;
 }
 
 .textContainer_smallscreen p:first-child {
@@ -405,6 +406,17 @@ footer div {
 
 .socialMediaLinks {
   color: var(--white);
+}
+
+.fa-twitter:hover,
+.fa-instagram:hover {
+  transform: scale(1.08);
+}
+
+@media only screen and (min-device-width: 350px) {
+  .logoContainer_smallscreen img {
+    display: inline-block;
+  }
 }
 
 @media only screen and (min-device-width: 500px) {

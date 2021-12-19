@@ -22,10 +22,15 @@ async function fetchDetails() {
     
 
         const mobileImage = document.querySelector(".recipeImage_smallScreen");
+        const mobileZoomIcon = document.querySelector(".zoom_smallscreen");
         const laptopImage = document.querySelector(".recipeImage_largeScreen img");
+        const laptopZoomImage = document.querySelector(".zoom_largescreen");
+
 
         mobileImage.addEventListener("click", displayModal);
+        mobileZoomIcon.addEventListener("click", displayModal);
         laptopImage.addEventListener("click", displayModal); 
+        laptopZoomImage.addEventListener("click", displayModal);
         
         function displayModal() {
             modal.style.display = "block"; 
@@ -55,9 +60,10 @@ function createHtml(details) {
     const dateOnly = `${details.date.slice(0, -9)}`;
 
     recipeDetails.innerHTML = `<div class="recipeContainer">
-                                    <div class="recipeImage_smallScreen"
-                                        style="background-image: url('${details._embedded["wp:featuredmedia"][0].source_url}')"></div>                                        
+                                    <div class="recipeImage_smallScreen" style="background-image: url('${details._embedded["wp:featuredmedia"][0].source_url}')"></div>
+                                    <i class="fas fa-search-plus zoom_smallscreen"></i> 
                                     <div class="recipeImage_largeScreen">
+                                    <i class="fas fa-search-plus zoom_largescreen"></i>
                                         <img src="${details._embedded["wp:featuredmedia"][0].source_url}" alt="${details._embedded["wp:featuredmedia"][0].alt_text}" />
                                     </div>
                                     <div class="recipeIntroContainer">
